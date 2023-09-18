@@ -1,0 +1,49 @@
+.containerFavorites {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding-top: 15px;
+    background-image: url("../../images/imgFavorites.jpg");
+    min-height: 81vh;
+}
+
+.containerSelects {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.containerCardFav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+ select{
+    padding: 7px;
+    font-size: 1em;
+    font-family: 'Alkatra', cursive;
+    font-weight: 550;
+    background-color:#79f1c3;
+    color:#fff;
+    border-radius: 5px;
+    border: none;
+    text-shadow: 1px 1px #b9b9b5;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px #131212;
+    box-shadow: 2px 2px 3px #ababab;
+}
+
+select:hover {
+    background-color: #30eba3;
+}
+
+.msgFav p {
+    font-size: 30px;
+    font-weight: 600;
+    color: #32ebf8;
+    text-shadow: 2px 2px #e42525;
+}
