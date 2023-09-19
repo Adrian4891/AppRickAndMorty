@@ -13,7 +13,7 @@ import NotFound from './components/notFound/NotFound';
 import FilterCard from './components/filtersCards/FilterCard';
 import MenuMobile from "./components/menuMobile/MenuMobile";
 import axios from 'axios';
-axios.defaults.baseURL='http://localhost:3001';
+axios.defaults.baseURL='https://apprickandmorty-production.up.railway.app/';
 
 
 function App() {
