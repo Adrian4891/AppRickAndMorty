@@ -41,7 +41,6 @@
     "touch": "^3.1.0",
     "undefsafe": "^2.0.5"
   },
- 
   "scripts": {
     "start": "nodemon ./src/index.js",
     "test": "jest --detectOpenHandles"
