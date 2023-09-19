@@ -35,9 +35,6 @@
     border-radius:100%;
 }
 
-.iconMail {
-    margin-top: 12px;
-}
 
 @media (max-width:425px){
     .containerAbout img {
