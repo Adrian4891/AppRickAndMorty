@@ -15,16 +15,15 @@
   
 .searchaBar button {
     font-family: 'Alkatra', cursive;
-    padding: 3px 6px;
+    padding: 2px 6px;
     border-radius: 5px;
     font-size: 15px;
     font-weight: 650;
     border: none;
     background-color:#79f1c3;
     text-shadow: 1px 1px #b4f34e;
-    color: #ffffff;
+    color: #ffff;
     text-shadow: 1px 1px 2px #000000;
-    box-shadow:1px 2px 2px #c7f8b0;
 }
   
 .searchaBar button:hover {

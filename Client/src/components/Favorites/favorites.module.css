@@ -1,8 +1,7 @@
 .containerFavorites {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items:center;
-    justify-content: space-evenly;
     flex-direction: column;
     padding-top: 15px;
     background-image: url("../../images/imgFavorites.jpg");
@@ -11,7 +10,7 @@
 
 .containerSelects {
     display: flex;
-    justify-content: center;
+    justify-content:start;
     gap: 15px;
 }
 

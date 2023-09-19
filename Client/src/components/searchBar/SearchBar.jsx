@@ -9,14 +9,22 @@ export default function SearchBar(props) {
   const inputChange=(e)=>{ 
      setInputValue(e.target.value);
    }
+   const sumbmitValue = (event) =>{
+      event.preventDefault();
+      onSearch(inpValue);
+      setInputValue("");
+   }
 
    return (
-      <div className={style.searchaBar}>
-         <input id="inp"type='search' className={style.inpSearch} 
-           onChange={inputChange} value={inpValue}
-           placeholder="Search for name"
+      <form className={style.searchaBar} onSubmit={sumbmitValue}>
+         <input 
+         id="inp"
+         type='search' 
+         placeholder="Busca por nombre"
+         className={style.inpSearch} 
+         onChange={inputChange} value={inpValue}
          />
-         <button onClick={()=>{onSearch(inpValue);setInputValue("")}}>Search</button>
-      </div>
+         <button>Buscar</button>
+      </form>
    );
 }
