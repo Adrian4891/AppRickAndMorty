@@ -43,7 +43,7 @@
     "nodemon": "^2.0.22"
   },
   "scripts": {
-    "start": "nodemon ./src/index.js",
+    "start": "nodemon ./index.js",
     "test": "jest --detectOpenHandles"
   },
   "keywords": [],
