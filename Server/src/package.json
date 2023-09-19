@@ -39,18 +39,17 @@
     "supports-color": "^5.5.0",
     "to-regex-range": "^5.0.1",
     "touch": "^3.1.0",
-    "undefsafe": "^2.0.5"
+    "undefsafe": "^2.0.5",
+    "nodemon": "^2.0.22"
   },
   "scripts": {
-    "start": "node ./src/index.js",
-    "dev": "nodemon ./src/index.js",
+    "start": "nodemon ./src/index.js",
     "test": "jest --detectOpenHandles"
   },
   "keywords": [],
   "author": "Ernesto216",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^2.0.22",
     "jest": "^29.5.0",
     "supertest": "^6.3.3"
   }
