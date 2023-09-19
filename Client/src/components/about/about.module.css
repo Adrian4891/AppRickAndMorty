@@ -34,7 +34,9 @@
     padding: 0px;
     border-radius:100%;
 }
-
+.containerAbout svg {
+    padding:0px 5px;
+}
 
 @media (max-width:425px){
     .containerAbout img {
