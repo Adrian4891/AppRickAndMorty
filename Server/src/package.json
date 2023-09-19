@@ -41,9 +41,7 @@
     "touch": "^3.1.0",
     "undefsafe": "^2.0.5"
   },
-  "devDependencies": {
-    "nodemon": "^2.0.22"
-  },
+ 
   "scripts": {
     "start": "nodemon ./src/index.js",
     "test": "jest --detectOpenHandles"
@@ -52,6 +50,7 @@
   "author": "Ernesto216",
   "license": "ISC",
   "devDependencies": {
+    "nodemon": "^2.0.22",
     "jest": "^29.5.0",
     "supertest": "^6.3.3"
   }
