@@ -58,6 +58,6 @@
     "testEnvironment":"node"
   },
   "engines": {
-    "node": ">=16.14.2 <19.0.0"
+    "node": ">=14.19.1 <19.0.0"
   }
 }
