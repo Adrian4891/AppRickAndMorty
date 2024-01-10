@@ -1,37 +1,56 @@
-const app = require("../app");
-const session = require("supertest");
-const request = session(app);
+//const app = require("../app");
+//const session = require("supertest");
+//const request = session(app);
 
-// const character = {    
-//     id: 1, 
-//     name: 'Rick Sanchez',
-//     species: 'Human',
-//     origin: {
-//       name: 'Earth (C-137)',
-//       url: 'https://rickandmortyapi.com/api/location/1'
-//     },
-//     image: 'https://rickandmortyapi.com/api/character/avatar/1.jpeg',
-//     gender: 'Male',
-//     status: 'Alive'
-// }
-// describe("Test de RUTAS", ()=> {
-//     describe("GET /rickandmorty/character/:id" , ()=>{
-//       it("Responde con status: 200", async ()=>{
-//         const response = await request.get('/rickandmorty/character/1');
-//         expect( response.statusCode).toBe(200);
-//       });
-//       it( "Responde un objeto con las propiedades: 'id', 'name', 'species','gender','status', 'origin','image' ",
-//       async()=>{
-//         const response = await request.get('/rickandmorty/character/1')
-//         for(const prop in character){
-//             expect(response.body).toHaveProperty(prop);
-//         }
-//       });
-//       it("Si hay un error responde con status: 500 ", async ()=>{
-//         const response = await request.get('/rickandmorty/character/133j');
-//         expect(response.statusCode).toBe(500);
-//       });
+const { reverseString } = require("../testing/funcReverse");
+const {  funcOrder } = require("../testing/funcOrder");
+const funDesvalance = require("../testing/funDesvalance");
 
-      
-//     });
-// });
+describe("Function reverse", ()=>{
+    test("Deberia devolver un string alreves", ()=> {
+       const result = reverseString("ernesto");
+       expect(result).toBe("otsenre");
+    });
+    
+    test("Si es en mayuscula deberia devolver lo mismo", ()=>{
+        const result = reverseString("ERNESTO");
+        expect(result).toBe("otsenre")
+    });
+    
+    test("Si el string esta vacio, deberia devolver un string vacio", ()=>{
+        const result = reverseString("");
+        expect(result).toBe("")
+    });
+    
+    test("Si no se le pasa nada, devulve undefined", ()=>{
+        const result = reverseString();
+        expect(result).toBe(undefined);
+    });
+})
+
+describe("Function order",()=>{
+    test("Devuelve un array ordenado, ascendente", ()=>{
+       const result = funcOrder([4,32,6,67,8,9,12,99]);
+       expect(result).toStrictEqual([4,6,8,9,12,32,67,99]);
+    });
+    test("Si se le pasa un array vacio, solo lo devuelve",()=>{
+        const result = funcOrder([]);
+        expect(result).toStrictEqual([]);
+    });
+    test("Si no se le pasa nada, devulve undefined", ()=>{
+        const result = funcOrder();
+        expect(result).toBe(undefined);
+    });
+
+});
+
+describe("Expresion balanceada",()=>{
+   test("deberia devolver true si la expresion esta balanceada ", ()=>{
+      const result = funDesvalance("{ [ a * ( c + d ) ] : 5 }")
+      expect(result).toBe(true);
+   });
+   test("si la expresion esta desvalanceada devuelve false", () =>{
+      const result = funDesvalance("{ a * ( c + d ) ] - 5 }");
+      expect(result).toBe(false);
+   });
+});

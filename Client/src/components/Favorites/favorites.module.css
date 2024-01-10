@@ -1,6 +1,6 @@
 .containerFavorites {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items:center;
     flex-direction: column;
     padding-top: 15px;
@@ -10,7 +10,7 @@
 
 .containerSelects {
     display: flex;
-    justify-content:start;
+    justify-content:flex-start;
     gap: 15px;
 }
 
