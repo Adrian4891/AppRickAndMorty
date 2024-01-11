@@ -1,12 +1,10 @@
 require('dotenv').config();
-const { DB_USER, DB_PASSWORD, DB_HOST, DB_PORT, DB_NAME } = process.env;
+const { DB_URL } = process.env;
 const { Sequelize } = require("sequelize");
 const characterModel = require("./models/Character");
 const favoriteModel = require("./models/Favorite");
 
-const URL = `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}`;
-//url de la coneccion
-const sequelize = new Sequelize(URL,
+const sequelize = new Sequelize(DB_URL,
    {logging: false, native: false}
 );
 //instancia de coneccion
