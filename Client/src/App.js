@@ -13,7 +13,7 @@ import NotFound from './components/notFound/NotFound';
 import FilterCard from './components/filtersCards/FilterCard';
 import MenuMobile from "./components/menuMobile/MenuMobile";
 import axios from 'axios';
-axios.defaults.baseURL='https://apprickandmorty-production.up.railway.app/';
+axios.defaults.baseURL='https://api-enkh.onrender.com';
 
 
 function App() {
