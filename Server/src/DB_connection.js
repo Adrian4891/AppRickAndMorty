@@ -5,10 +5,11 @@ const characterModel = require("./models/Character");
 const favoriteModel = require("./models/Favorite");
 
 const URL = `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}`;
-
+//url de la coneccion
 const sequelize = new Sequelize(URL,
    {logging: false, native: false}
 );
+//instancia de coneccion
 
 characterModel(sequelize);
 favoriteModel(sequelize);
