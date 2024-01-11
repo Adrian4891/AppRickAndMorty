@@ -7,7 +7,7 @@ const favoriteModel = require("./models/Favorite");
 const sequelize = new Sequelize(DB_URL,
    {logging: false, native: false}
 );
-//instancia de coneccion
+
 
 characterModel(sequelize);
 favoriteModel(sequelize);
