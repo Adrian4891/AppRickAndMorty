@@ -6,7 +6,7 @@ const favoriteModel = require("./models/Favorite");
 
 const sequelize = new Sequelize(DB_URL,{
    logging: false, 
-   native: false
+   native: false,
    dialectOptions: {
       ssl: {
         require: true,
