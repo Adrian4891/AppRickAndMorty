@@ -13,9 +13,9 @@ router.get("/allCharacters",getAllChars);
 
 /* Function de logeo */ 
 
-router.get("/login", (req, res)=>{
+router.get("/login", async (req, res)=>{
   console.log(req);
-  login(req, res);
+  return await login(req, res);
 });
 
 /* Function que obtiene los favorites en la DB*/
